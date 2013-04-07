@@ -65,8 +65,8 @@ public:
 
     const char *getBuffer() const { return buffer; }
 
-    mxArray *getVariable(const char *name) {
-        return mexGetVariable("base", name);
+    const mxArray *getVariable(const char *name) {
+        return mexGetVariablePtr("base", name);
     }
 
     bool putVariable(const char *name, mxArray *var) {
