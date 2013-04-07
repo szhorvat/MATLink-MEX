@@ -1,6 +1,7 @@
 
 #include "mengine.h"
 
+#include <cassert>
 #include <vector>
 #include <algorithm>
 
